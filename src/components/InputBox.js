@@ -78,9 +78,9 @@ class InputBox extends React.Component {
                     <div className="InputBox">
                         <form onSubmit={this.handleSubmit}>
                             <p>Click "export url" and fill in the form b4 clicking buy</p>
-                            <input name="seckillSwagId" type="number" placeholder="Product id" value={this.state.seckillSwagId} onChange={this.onChange}/>
+                            <input name="seckillSwagId" type="number" placeholder="Product id" value={this.state.seckillSwagId} onChange={this.onChange} />
                             <input onChange={this.onChange} name="phoneNumber" type="number" value={this.state.phoneNumber} placeholder="Phone number..23910973664" />
-                            <input type="submit" value="Buy" />
+                            <input type="submit" disabled={!this.state.md5Url} value="Buy"/>
                         </form>
                         <div className="tooltip">
                             <span className="tooltiptext">The meaning of "secured url" is not only that the backend can apply different salt of hashing for each product in each sale period so that people cannot reuse the same url to buy in the future, but also this prevents people findout the url ahead of time and span http request to the url before the sale starts.</span>
