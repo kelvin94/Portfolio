@@ -52,7 +52,7 @@ export default ProductInfoBox;
 //     //         md5Url: this.state.md5Url
 //     //     };
     
-//     //     axios.post(`http://disseckill.jyl69.xyz:8080/swag`,  swag , {
+//     //     axios.post(`http://disseckill.jyl69.xyz:8663/swag`,  swag , {
 //     //         headers: headers
 //     //     })
 //     //     .then((response) => {
@@ -76,7 +76,7 @@ export default ProductInfoBox;
 
 //     // exportURL = e => {
 //     //     e.preventDefault();
-//     //     const url = `http://disseckill.jyl69.xyz:8080/export/url/${this.props.offer.seckillSwagId}`
+//     //     const url = `http://disseckill.jyl69.xyz:8663/export/url/${this.props.offer.seckillSwagId}`
 //     //     axios.get(url)
 //     //       .then(response => {
 //     //           console.log(response.data);

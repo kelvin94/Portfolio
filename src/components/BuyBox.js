@@ -12,7 +12,7 @@ const BuyBox = (props) => {
     const textAreaRef = useRef(null);
 
     const updateSelectedProductUrlHash = (swagId) => {
-        const url = `https://disseckill.jyl69.xyz:8080/export/url/${swagId}`
+        const url = `https://disseckill.jyl69.xyz:8663/export/url/${swagId}`
         axios.get(url)
           .then(response => {
             console.log(response.data);

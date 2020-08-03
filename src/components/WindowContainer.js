@@ -21,7 +21,7 @@ const WindowContainer = (props) => {
     const [phoneNumber, setPhoneNumber] = useState('')
 
     const getProducts = () => {
-        axios.get("https://disseckill.jyl69.xyz:8080/swag")
+        axios.get("https://disseckill.jyl69.xyz:8663/swag")
           .then(response => {
               console.log(response.data)
             setOffers(
@@ -58,7 +58,7 @@ const WindowContainer = (props) => {
             md5Url: md5HashedUrl
         };
     
-        axios.post(`https://disseckill.jyl69.xyz:8080/swag`,  swag , {
+        axios.post(`https://disseckill.jyl69.xyz:8663/swag`,  swag , {
             headers: headers
         })
         .then((response) => {
