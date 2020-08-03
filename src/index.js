@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Container from "./components/Container"
+import WindowContainer from "./components/WindowContainer"
 import "./App.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const element = <h1>Hello from Create React App</h1>
 
-ReactDOM.render(<Container />, document.getElementById("root"))
+ReactDOM.render(<WindowContainer />, document.getElementById("root"))
