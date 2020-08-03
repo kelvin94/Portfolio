@@ -2,7 +2,7 @@
   "name": "kelvin-porfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://portfolio.jyl69.xyz/",
+  "homepage": "http://portfolio.jyl69.xyz/",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
