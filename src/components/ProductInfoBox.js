@@ -2,32 +2,22 @@ import React from "react"
 import ResponseBox from "./ResponseBox"
 import ExportURLBox from "./ExportURLBox"
 import axios from "axios";
+import Card from 'react-bootstrap/Card'
 const ProductInfoBox = (props) => {
     return ( 
         <div>
+            <Card>
+                <Card.Body>
+                    <Card.Title>Product: {props.product.title}</Card.Title>
+                    <Card.Text>
+                        <p>MSRP: {props.product.price}</p>
+                        <p>Discounted price: {props.product.seckill_price}</p>
+                        <p>Current stock count: {props.product.stockCount}</p>
+                    </Card.Text>
                     
-            {/* <ResponseBox responseMessage={this.state.responseMessage} /> */}
-            <div>
-                {/* <form onSubmit={this.handleSubmit}>
-                    <p>Click "export url" and fill in the form b4 clicking buy</p>
-                    <span>Product id:</span>
-                    <input name="seckillSwagId" type="number" placeholder="Product id" value={this.state.seckillSwagId} onChange={this.onChange} />
-                    <span>Phone num:</span>
-                    <input onChange={this.onChange} name="phoneNumber" type="number" value={this.state.phoneNumber} placeholder="Phone number..23910973664" />
-                    <input type="submit" disabled={!this.state.md5Url} value="Buy"/>
-                </form> */}
-                {/* <div className="tooltip">
-                    <span className="tooltiptext">The meaning of "secured url" is not only that the backend can apply different salt of hashing for each product in each sale period so that people cannot reuse the same url to buy in the future, but also this prevents people findout the url ahead of time and span http request to the url before the sale starts.</span>
-                    <button onClick={this.exportURL}>Export secured url and get latest stock count</button>
-                </div> */}
-                
-
-                <p>Product: {props.product.title}</p>
-                <p>MSRP: {props.product.price}</p>
-                <p>Discounted price: {props.product.seckill_price}</p>
-                <p>Current stock count:{props.product.stockCount}</p>
-
-            </div>
+                </Card.Body>
+                </Card>
+            
                     
         </div>
     );
